@@ -1,0 +1,14 @@
+<p id="copy">@*O7lGvi!Wx1guO!</p>
+<button type="button" onclick="copyEvent('copy')">COPY</button>
+
+<button onclick="window.location.href='https://ilicart.wordpress.com/?input#pwbox-4126';">PASTE</button>
+
+
+<script>
+    function copyEvent(id)
+    {
+        var str = document.getElementById(id);
+        window.getSelection().selectAllChildren(str);
+        document.execCommand("Copy")
+    }
+</script>
